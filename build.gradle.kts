@@ -2,6 +2,7 @@ plugins {
     id("java")
     id("application")
     id("org.sonarqube") version "7.3.0.8198"
+    id("checkstyle")
 }
 
 group = "hexlet.code"
@@ -32,4 +33,17 @@ sonar {
         property("sonar.sources", "App/src/main/java")
         property("sonar.java.binaries", "build/classes")
     }
+}
+
+checkstyle {
+    toolVersion = "10.12.0"
+    configFile = file("App/config/checkstyle/checkstyle.xml")
+}
+
+tasks.named<Checkstyle>("checkstyleMain") {
+    source = fileTree("App/src/main/java")
+}
+
+tasks.named<Checkstyle>("checkstyleTest") {
+    source = fileTree("App/src/test/java")
 }
