@@ -1,4 +1,4 @@
 .PHONY: run-dist
 
 run-dist:
-	build\install\app\bin\app.bat
+	build\install\App\bin\app.bat
