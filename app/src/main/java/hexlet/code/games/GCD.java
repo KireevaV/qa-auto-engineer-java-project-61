@@ -15,7 +15,10 @@ public class GCD {
             rounds[i][1] = String.valueOf(correctAnswer);
         }
 
-        Engine.run("Welcome to the Brain Games!\nFind the greatest common divisor of given numbers.", rounds);
+        Engine.run(
+                "Find the greatest common divisor of given numbers.",
+                rounds
+        );
     }
 
     private static int gcd(int a, int b) {

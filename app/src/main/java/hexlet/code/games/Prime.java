@@ -14,7 +14,10 @@ public class Prime {
             rounds[i][1] = answer;
         }
 
-        Engine.run("Welcome to the Brain Games!\nAnswer 'yes' if given number is prime. Otherwise answer 'no'.", rounds);
+        Engine.run(
+                "Answer 'yes' if given number is prime. Otherwise answer 'no'.",
+                rounds
+        );
     }
 
     private static boolean isPrime(int number) {

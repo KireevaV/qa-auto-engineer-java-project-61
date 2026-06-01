@@ -20,7 +20,7 @@ public class Calc {
             rounds[i][1] = answer;
         }
 
-        Engine.run("Welcome to the Brain Games!", rounds);
+        Engine.run("What is the result of the expression?", rounds);
     }
 
     private static int calculate(int a, int b, char op) {

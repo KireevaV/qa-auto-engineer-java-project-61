@@ -24,7 +24,10 @@ public class Progression {
             rounds[i][1] = String.valueOf(correctAnswer);
         }
 
-        Engine.run("Welcome to the Brain Games!\nWhat number is missing in the progression?", rounds);
+        Engine.run(
+                "What number is missing in the progression?",
+                rounds
+        );
     }
 
     private static String[] generateProgression(int start, int step, int length) {
