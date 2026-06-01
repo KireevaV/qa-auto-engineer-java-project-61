@@ -14,6 +14,9 @@ public class Even {
             rounds[i][1] = answer;
         }
 
-        Engine.run("Welcome to the Brain Games!", rounds);
+        Engine.run(
+                "Answer 'yes' if the number is even, otherwise answer 'no'.",
+                rounds
+        );
     }
 }
