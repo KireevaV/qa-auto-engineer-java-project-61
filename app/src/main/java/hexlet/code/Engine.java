@@ -34,8 +34,6 @@ public class Engine {
                 return;
             }
         }
-
-
         System.out.println("Congratulations, " + userName + "!");
         scanner.close();
     }
